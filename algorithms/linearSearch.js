@@ -25,3 +25,17 @@ function FindLastOccurance(nums, target) {
   }
   return greatestIndex;
 };
+
+
+// 3. Search a list of ints for every occurance of a particular integer. Return a list of every index number. Empty list if not found. 
+
+const everyOccuranceOf = (nums, target) => {
+  let newList = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === target) {
+      newList.push(i);
+    }
+  }
+  return newList;
+};
