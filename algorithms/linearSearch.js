@@ -43,7 +43,7 @@ const everyOccuranceOf = (nums, target) => {
 
 // 4. Search a list of strings for words that start with a substring. Return the first occurance index.
 
-const findString = (strings, substring) => {
+const findStringIndex = (strings, substring) => {
   for (let i = 0; i < strings.length; i ++) {
     if (strings[i].startsWith(substring)) {
       return i;
@@ -51,3 +51,4 @@ const findString = (strings, substring) => {
   }
   return -1;
 };
+
