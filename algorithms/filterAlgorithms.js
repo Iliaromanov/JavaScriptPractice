@@ -7,3 +7,5 @@ function filterEvens(nums) {
   });
   return newList;
 };
+
+// 2. Create a function that will take a string and return a new string with all the vowels converted to uppercase.
