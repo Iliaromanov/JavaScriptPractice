@@ -52,3 +52,12 @@ const findStringIndex = (strings, substring) => {
   return -1;
 };
 
+
+// 5. Search a list of strings for words that start with a substring. Return list of all the strings (not the index positions).
+
+const filterStrings = (strings, substring) => {
+  let newList = strings.filter(string => {
+    return string.startsWith(substring);
+  });
+  return newList;
+};
