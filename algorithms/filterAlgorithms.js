@@ -9,3 +9,18 @@ function filterEvens(nums) {
 };
 
 // 2. Create a function that will take a string and return a new string with all the vowels converted to uppercase.
+
+const upperVowels = word => {
+  let newString = '';
+  let newWord = [];
+
+  for (let i = 0; i < word.length; i++) {
+    newWord.push(word[i]);
+  };
+
+  newWord.forEach(letter => {
+    letter.match(/[aeiou]/) ? newString += letter.toUpperCase() : newString += letter;
+  });
+  return newString;
+};
+
