@@ -26,3 +26,10 @@ const upperVowels = word => {
 
 
 // 3. Create a function that will take a list of names and return a new list of all names that start with a particular character.
+
+const findNames = (names, target) => {
+  let newNames = names.filter(name => {
+    return name[0] === target;
+  });
+  return newNames;
+};
